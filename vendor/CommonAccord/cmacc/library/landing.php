@@ -1,11 +1,10 @@
 <body style="margin:40;padding:0">
+
 <?php
 
 $lib_path = LIB_PATH;
 
-$dir="W/Landing.md";
-
-echo $dir;
+$dir=LANDING_MD;
 
 $document = `perl $lib_path/parser.pl $path/$dir`;
 

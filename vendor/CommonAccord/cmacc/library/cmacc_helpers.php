@@ -2,19 +2,11 @@
 error_reporting(E_ALL);
 $path = ROOT . '/Doc/';
 
-$URLForDocsInRepo = URLFORDOCSINREPO ;
+//$URLForDocsInRepo = URLFORDOCSINREPO ;
 
-$Render_the_Document= "Render the Document";
+//$Render_the_Document= "Render the Document";
 
-$Completions_Message = "Open Completions - copy from here, paste into your document, and complete:";
-
-$Doc_Message= "Document";
-
-$Print_Message="Print";
-
-$Complete_Fields_Message="Edit and Complete";
-
-$Edit_Message= "Edit";
+//$Completions_Message = "Open Completions - copy from here, paste into your document, and complete:";
 
 $Text_Edit_Window_Size = TEXTEDITWINDOWSIZE ;
 
@@ -87,11 +79,6 @@ switch ($_REQUEST['action']) {
     case 'edit':
 
         include('edit.php');
-        break;
-
-    case 'pull':
-
-        echo `cd /var/www/www.commonaccord.org/Alpha; git reset --hard HEAD; git pull -f 2>&1`;
         break;
 
     default:
