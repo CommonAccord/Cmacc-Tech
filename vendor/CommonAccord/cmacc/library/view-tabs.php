@@ -13,7 +13,7 @@ echo "<a href=index.php?action=print&file=" .$dir.">".PRINT_TAB_MESSAGE."</a> &e
 
 echo "<a href=" . URLFORDOCSINREPO . $dir.">GitHub</a> &emsp; ";
 
-echo "<a href=" . URLFORREPO . "search?utf8=✓&q=" . URLFORREPO . "/search?utf8=✓&q=" .$dir. ">Used By</a>";
+echo "<a href=" . URLFORREPO . "/search?utf8=✓&q=" .$dir. ">Used By</a>";
 
 
 ?>

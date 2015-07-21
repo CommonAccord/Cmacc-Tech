@@ -4,7 +4,7 @@ DEFINE('ROOT' ,dirname(__FILE__) ); // Root directory of site
 
 DEFINE('URLFORREPO', 'https://github.com/CommonAccord/Site-Bare');	// The repo home
 
-DEFINE('LANDING_MD', 'ZZZ/Landing.md');	// The repo home
+DEFINE('LANDING_MD', 'ZZZ/landing.md');	// The repo home
 
 DEFINE('SOURCE_TAB_MESSAGE', 'Source');	// Tab
 
