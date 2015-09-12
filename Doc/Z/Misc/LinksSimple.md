@@ -12,6 +12,6 @@ m-=<font color="magenta">
 
 -m=</font>
   
-x-=<a href=""><font color="blue">
+x-=<font color="blue">
 
 -x=</font>
