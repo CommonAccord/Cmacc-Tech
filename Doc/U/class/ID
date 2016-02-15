@@ -8,6 +8,10 @@ Sign.Bloc=<table border="0" cellpadding="1" cellspacing="1" style="width:300px">
 
 N,E,A={Name.Full}, {entity.a} whose {Addr.Type} address is {Addr.1,2}
 
+Name,Twitter={Name.Full}, {Twitter.Handle}
+
+ECard.Mini=Name: {Name.Full}, Twitter: <a href="https://twitter.com/{Twitter.Handle}">{Twitter.Handle}</a>
+
 ListType={N/A/L/G/T}
 
 N/A/L/G/T={Name.Full}, {entity.a}<br> Whose {Addr.Type} address is {Addr.1,2}<br> LinkedIn: <a href="http://linkedin.com/in/{LinkedIn.Handle}">{LinkedIn.Handle}</a><br>GitHub: <a href="http://github.com/{GitHub.Handle}">{GitHub.Handle}</a><br>Twitter: <a href="http://twitter.com/{Twitter.Handle}">{Twitter.Handle}</a><br>Say Something: {SomethingToSay}
@@ -15,6 +19,8 @@ N/A/L/G/T={Name.Full}, {entity.a}<br> Whose {Addr.Type} address is {Addr.1,2}<br
 N/1/2={Name.Full}<br>{Addr.1/2}
 
 N,A={Name.Full}, {Addr.1,2}
+
+N,1,2={Name.Full}, {Addr.1,2}
 
 N/A={Name.Full}<br>{Addr.1/2}
 
@@ -49,12 +55,12 @@ SignDated.FR=Date : {Sign.YMD}
 
 Model.Root={Addr.Table}
 
-Addr.Table=<table  rules='rows'; border=1><tr><th>ID:</th><td></td><td></td></tr><tr><th>N,E,A:</th><td></td><td>{N,E,A}</td></tr><tr><th>Twitter.Followers:</th><td></td><td>{Twitter.Followers}</td></tr><tr><th>N/1/2:</th><td></td><td>{N/1/2}</td></tr><tr><th>Notice.Block:</th><td></td><td>{Notice.Block}</td><tr><tr><th>Sign.Block:</th><td></td><td>{Sign.Block}</td><tr></table>
+Addr.Table=<table  rules='rows'; border=1><tr><th>ID:</th><td></td><td></td></tr><tr><th>N,E,A:</th><td></td><td>{N,E,A}</td></tr><tr><th>Twitter.Followers:</th><td></td><td>{Twitter.Followers}</td></tr><tr><th>N/A/T/E/F:</th><td></td><td>{N/A/T/E/F}</td></tr><tr><th>Notice.Block:</th><td></td><td>{Notice.Block}</td><tr><tr><th>Sign.Block:</th><td></td><td>{Sign.Block}</td><tr></table>
 
 Pronoun.List={male/female}, {He/She}, {he/she}, {Him/Her}, {him/her}, {His/Her}, {his/her}, {His/Hers}, {his/hers}, {Himself/Herself}, {himself/herself}
 
-m-=<a href="https://github.com/CommonAccord/Org/blob/master/Doc/{PageName}"><font color="{mcolor}">
+Ti={Name.Full}
 
--m=</font></a>
+sec={N/A/T/E/F}
 
-mcolor=magenta
+Sec=<b>{Ti}</b><br>{sec}

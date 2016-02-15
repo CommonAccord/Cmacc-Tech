@@ -4,7 +4,9 @@ DocBody={Sec}
 
 Doc={Head.Sec}<br>{sec}{Foot.Sec} 
 
-Head.Sec=<font color="grey">{MessageToUser}</font><center><h4>{Head.sec}</h4></center>
+Head.Sec={Head.Message}<center><h4>{Head.sec}</h4></center>
+
+Head.Message=<font color="grey">{MessageToUser} GUID: {Doc.GUID}</font>
 
 Head.sec={Doc.Title}
 
@@ -140,6 +142,24 @@ Note=This avoids the need for cluttering a list with a separate Z/ol/0 for each 
 39.=[Z/ol/SubSec]
 
 40.=[Z/ol/SubSec]
+
+41.=[Z/ol/SubSec]
+
+42.=[Z/ol/SubSec]
+
+43.=[Z/ol/SubSec]
+
+44.=[Z/ol/SubSec]
+
+45.=[Z/ol/SubSec]
+
+46.=[Z/ol/SubSec]
+
+47.=[Z/ol/SubSec]
+
+48.=[Z/ol/SubSec]
+
+49.=[Z/ol/SubSec]
 
 null=</i>
 

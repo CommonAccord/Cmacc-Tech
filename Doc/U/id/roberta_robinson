@@ -1,12 +1,14 @@
 =[U/class/ID_She]
 
-=[U/at/USA/NY/Ulster/Woodstock/Geo]
+=[U/at/US/NY/Ulster/Woodstock/Geo]
 
 Sign.=[U/id/roberta_robinson]
 
 Sign.Title=Self
 
-Name.Full=Roberta Robinson
+Name.First=Roberta
+
+Name.Last=Robinson
 
 Addr.Type=business
 
@@ -17,5 +19,9 @@ Phone=918.981.8918
 Email=roberta@robinsonandson.com
 
 Fax=918.981.8918
+
+Notice.Name.Full={Name.Full}
+
+Notice.Title="Personal"
 
 PageName=U/id/roberta_robinson
