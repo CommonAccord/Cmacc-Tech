@@ -6,7 +6,7 @@ DOCPATH ?= $(shell pwd)/Doc
 
 .PHONY: start stop image
 
-start: image stop
+start: image
 	docker run -d --name=$(DOCKER_CONTAINER_NAME) --volume $(DOCPATH):/var/www/html/Doc -p $(DOCKER_HTTP_PORT):80 $(DOCKER_IMAGE)
 
 stop:
