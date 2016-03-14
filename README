@@ -1,6 +1,8 @@
 # CommonAccord
 
-## How to run the docker image?
+## Docker
+
+### How to run the docker image?
 
 If you have a docker setup, including environment export, up and running, you
 can `make run` to have a stack up in a few seconds. The first run will take a
@@ -16,4 +18,30 @@ run to have your documents mounted (read/write) into the runtime container.
 For example::
 
     DOCPATH=/Users/johndoe/Documents/LegalDocuments make start
+
+### How to access the app?
+
+If you're running Docker on Linux, the daemon is usually running locally, and
+thus the exposed ports will be accessible using the localhost ip (aka
+127.0.0.1).
+
+If you're running Docker on MacOSX (probably also true on windows), docker is
+using a virtual machine to run its daemon and thus you will access the
+container using the virtual machine IP. This IP depends on your setup, defaults
+on OSX is 192.168.99.100. To get the actual IP of the virtual machine running
+on your computer, you can use `docker-machine ip`.
+
+Defaults should be:
+
+- http://127.0.0.1:8080/ on Linux
+- http://192.168.99.100:8080/ on OSX
+
+### How to change which port the container will expose on docker daemons machine?
+
+You can change the exposed port by using the DOCKER_HTTP_PORT environment variable while running the make command.
+
+For example, to listen on the 1234 port, use:
+
+    DOCPATH=/Users/johndoe/Documents/LegalDocuments DOCKER_HTTP_PORT=1234 make start
+
 
